@@ -1,2 +1,2 @@
 # LinK3D
-The code will be released soon after my integrations.
+The code will be released soon.
