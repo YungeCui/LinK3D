@@ -183,7 +183,7 @@ namespace LinK3D_SLAM
                         tmpPt.y = laserCloudScans[i].points[j].y;
                         tmpPt.z = laserCloudScans[i].points[j].z;
                         tmpPt.scan = i;
-                        tmpPt.smothness = smoothness;
+                        tmpPt.smoothness = smoothness;
                         tmpPt.angel = ori; 
                         scanCloud[i].emplace_back(tmpPt);
                     }
@@ -714,8 +714,8 @@ namespace LinK3D_SLAM
                     PointXYZSCA maxSmoothPt;
                     for(size_t j = 0; j < tmpCluster[scanCnt].size(); j++)
                     {
-                        if(tmpCluster[scanCnt][j].smothness > maxSmooth){
-                            maxSmooth = tmpCluster[scanCnt][j].smothness;
+                        if(tmpCluster[scanCnt][j].smoothness > maxSmooth){
+                            maxSmooth = tmpCluster[scanCnt][j].smoothness;
                             maxSmoothPt = tmpCluster[scanCnt][j];
                         }
                     }
