@@ -21,7 +21,7 @@ struct PointXYZSCA
     {
         PCL_ADD_POINT4D;
         int scan;
-        float smothness;
+        float smoothness;
         float angel;
         EIGEN_MAKE_ALIGNED_OPERATOR_NEW;
     }EIGEN_ALIGN16;
@@ -29,7 +29,7 @@ struct PointXYZSCA
 #define PC_SCA pcl::PointCloud<PointXYZSCA>
 
 POINT_CLOUD_REGISTER_POINT_STRUCT(PointXYZSCA, 
-        (float, x, x)(float, y, y)(float, z, z)(int, scan, scan)(float, smothness, smothness)(float, angel, angel))
+        (float, x, x)(float, y, y)(float, z, z)(int, scan, scan)(float, smoothness, smoothness)(float, angel, angel))
 
 namespace LinK3D_SLAM
 {
