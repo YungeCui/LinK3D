@@ -17,3 +17,21 @@ If you use the code in an academic work, please cite:
       number={5},
       pages={2828-2835},
       doi={10.1109/LRA.2022.3221336}}
+
+## 2. Prerequisites
+We have tested the library in Ubuntu 16.04 and 20.04. A computer with an Intel Core i7 will ensure the real-time performance and provide stable and accurate results.
+ 
+- [ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu) for Ubuntu 16.04 and [ROS Noetic](https://wiki.ros.org/noetic/Installation/Ubuntu) for Ubuntu 20.04.
+- [PCL(>=1.7)](https://github.com/PointCloudLibrary/pcl)
+- [OpenCV](https://github.com/opencv/opencv)
+- [Eigen 3](https://eigen.tuxfamily.org/dox/)
+
+## 3. Compile and run the package
+Before compile the package, in the main function of Example.cpp file, you should replace the dataset path with the file path in your computer. 
+
+    cd ~/catkin_ws/src
+    git clone https://github.com/YungeCui/BoW3D/
+    cd ..
+    catkin_make -j8
+    source devel/setup.bash
+    rosrun BoW3D bow3d
