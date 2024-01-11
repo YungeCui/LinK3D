@@ -26,12 +26,14 @@ We have tested the library in Ubuntu 16.04 and 20.04. A computer with an Intel C
 - [OpenCV](https://github.com/opencv/opencv)
 - [Eigen 3](https://eigen.tuxfamily.org/dox/)
 
-## 3. Compile and run the package
+## 3. Build LinK3D
 Before compile the package, in the main function of Example.cpp file, you should replace the dataset path with the file path in your computer. 
 
     cd ~/catkin_ws/src
-    git clone https://github.com/YungeCui/BoW3D/
+    git clone https://github.com/YungeCui/LinK3D/
     cd ..
     catkin_make -j8
     source devel/setup.bash
-    rosrun BoW3D bow3d
+
+## 4. KITTI Example (Velodyne HDL-64)
+Download [KITTI Odometry dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) to YOUR_DATASET_FOLDER.
