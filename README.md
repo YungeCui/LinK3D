@@ -36,4 +36,4 @@ Before compile the package, in the main function of Example.cpp file, you should
     source devel/setup.bash
 
 ## 4. KITTI Example (Velodyne HDL-64)
-Download [KITTI Odometry dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) to YOUR_DATASET_FOLDER.
+Download [KITTI Odometry dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) to YOUR_DATASET_FOLDER. Then change the "dataset_path" and "scan_line"(default:64) params in the run_bin.launch file
