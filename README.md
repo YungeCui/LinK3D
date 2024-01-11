@@ -2,7 +2,7 @@
 ![Alt text](fig/LinK3D_video.gif)
 LinK3D is develped for the real-time 3D feature extraction and matching of LiDAR point cloud, which generates accurate point-to-point matching results in real time. The core idea of LinK3D is derived from a very simple principle: representing the current keypoint with its neighboring keypoints.
 
-<div align=center><img width="700" height="500" src="fig/coreIdea.png"/></div>
+<div align=center><img width="1000" height="500" src="fig/coreIdea.png"/></div>
 
 
 
