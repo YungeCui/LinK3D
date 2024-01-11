@@ -8,6 +8,13 @@ LinK3D is develped for the real-time 3D feature extraction and matching of LiDAR
 ## 1. Publication
 If you use the code in an academic work, please cite:
 
+    @article{cui2022link3d,
+      title={Link3d: Linear keypoints representation for 3d lidar point cloud},
+      author={Cui, Yunge and Zhang, Yinlong and Dong, Jiahua and Sun, Haibo and Zhu, Feng},
+      journal={arXiv preprint arXiv:2206.05927},
+      year={2022}
+    }
+
     @ARTICLE{9944848,
       author={Cui, Yunge and Chen, Xieyuanli and Zhang, Yinlong and Dong, Jiahua and Wu, Qingxiao and Zhu, Feng},
       journal={IEEE Robotics and Automation Letters}, 
