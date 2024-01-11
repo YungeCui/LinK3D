@@ -39,3 +39,12 @@ Before compile the package, in the main function of Example.cpp file, you should
 Download [KITTI Odometry dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) to YOUR_DATASET_FOLDER. The program supports reading the point clouds in the **.bin** format of the KITTI dataset. Then change the **"dataset_path"** and **"scan_line"(default:64)** params in the **run_bin.launch** file, and save the changes. Finally, execute the command:
 
     roslaunch LinK3D run_bin.launch
+
+## 5. Rosbag Example 
+1). The program also sopports receive the **Rosbag** messages. The [M2DGR](https://github.com/SJTU-ViSYS/M2DGR) dataset is collected by a Velodyne VLP-32C LiDAR. Moreover, the [Stenven-VLP16-Dataset](https://github.com/TixiaoShan/Stevens-VLP16-Dataset) is collected by a Velodyne VLP-16 LiDAR. The two datasets provide the point cloud in the form of **.bag"" format. To run the M2DGR dataset, you should change the **"scan_line"** param to 32 in the **run_rosbag.launch** file, and save the changes. To run the Steven dataset, you should change the **"scan_line"** param to 16 in the **run_rosbag.launch** file, and save the changes. Then, execute the command:
+
+    roslaunch LinK3D run_rosbag.launch
+
+2). Play existing bag files:
+
+    rosbag play *.bag
