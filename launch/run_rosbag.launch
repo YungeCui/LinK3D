@@ -1,0 +1,15 @@
+<launch>
+
+    <arg name="project" default="LinK3D"/>
+    
+    
+    <!--The "scan_line" should correspond to the used 3D LiDAR-->
+    <param name="scan_line" type="int" value="32" />    
+    
+    
+    <node pkg="LinK3D" type="link3d_rosbag"   name="link3d_rosbag"    output="screen" 	respawn="true"/>
+    
+    <!-- Run Rviz-->
+    <node pkg="rviz" type="rviz" name="$(arg project)_rviz" args="-d $(find LinK3D)/rviz/LinK3D_RVIZ.rviz" />
+
+</launch>

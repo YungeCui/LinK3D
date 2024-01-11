@@ -1,0 +1,19 @@
+<launch>
+
+    <arg name="project" default="LinK3D"/>
+    
+            
+    
+    <!--The "scan_line" should correspond to the used 3D LiDAR, and the "dataset_path" should be replaced with the dataset path in your computer-->
+    <param name="scan_line" type="int" value="64" />  
+    <param name="dataset_path" type="string" value="/media/oem/My Passport/dataset/dataset/sequences/00/velodyne/" />   
+    
+
+
+    <!-- Run Node-->
+    <node pkg="LinK3D" type="link3d_bin"   name="link3d_bin"    output="screen" 	respawn="true"/>
+    
+    <!-- Run Rviz-->
+    <node pkg="rviz" type="rviz" name="$(arg project)_rviz" args="-d $(find LinK3D)/rviz/LinK3D_RVIZ.rviz" />
+
+</launch>
