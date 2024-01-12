@@ -42,7 +42,7 @@ Clone the repository and catkin_make:
     catkin_make -j8
     source devel/setup.bash
 
-If the compilation is not successful, perhaps you should adjust the CMAKE_CXX_STANDARD in the CMakeList.txt to match the version on your computer.
+If the compilation is not successful, perhaps you should adjust the CMAKE_CXX_STANDARD in the CMakeList.txt to match the C++ version on your computer.
 
 ## 4. KITTI Example (Velodyne HDL-64)
 Download [KITTI Odometry dataset](https://www.cvlibs.net/datasets/kitti/eval_odometry.php) to YOUR_DATASET_FOLDER. The program supports reading the point clouds in the **.bin** format of the KITTI dataset. Change the **"dataset_path"** and **"scan_line"(default:64)** params in the **run_bin.launch** file, and save the changes. Finally, execute the command:
