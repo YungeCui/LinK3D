@@ -256,7 +256,7 @@ int main(int argc, char** argv)
         line_list.type = visualization_msgs::Marker::LINE_LIST;
         line_list.header.frame_id = "map";
         line_list.header.stamp = ros::Time::now();
-        line_list.scale.x = 0.07; //0.05
+        line_list.scale.x = 0.07; 
 
         line_list.color.r = 0.0;
         line_list.color.g = 1.0;
