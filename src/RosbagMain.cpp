@@ -68,7 +68,7 @@ void ransac(vector<pcl::PointXYZ> &vpCurPt, vector<pcl::PointXYZ> &vpLastPt, vec
 }
 
 
-void ransacForEdgePt(vector<pcl::PointXYZ> &kp1, vector<pcl::PointXYZ> &kp2, MatPt &matchedEdgePt, vector<pair<PointXYZSCA, PointXYZSCA>> &vTrueMatchedEdgePoint)
+void ransacForEdgePt(MatPt &matchedEdgePt, vector<pair<PointXYZSCA, PointXYZSCA>> &vTrueMatchedEdgePoint)
 {
     if(matchedEdgePt.empty()){
         return;
@@ -222,7 +222,7 @@ int main(int argc, char** argv)
                 ransac(currentKeyPoints, lastKeyPoints, vMatched, vTrueMatchedIndex);                                        
                 /*Remove the mismatches for edge keypoints*/                                               
                 vector<pair<PointXYZSCA, PointXYZSCA>> vTrueMatchedEdgePoint;
-                ransacForEdgePt(currentKeyPoints, lastKeyPoints, matchedEdgePoint, vTrueMatchedEdgePoint);               
+                ransacForEdgePt(matchedEdgePoint, vTrueMatchedEdgePoint);               
 
 
                 /*visualization*/
