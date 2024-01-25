@@ -13,10 +13,12 @@ If you use the code in an academic work, please cite:
       journal={IEEE Robotics and Automation Letters}, 
       title={LinK3D: Linear Keypoints Representation for 3D LiDAR Point Cloud}, 
       year={2024},
-      volume={},
-      number={},
-      pages={1-8},
+      volume={9},
+      number={3},
+      pages={2128-2135},
+      keywords={Laser radar;Feature extraction;Three-dimensional displays;Point cloud compression;Task analysis;Histograms;Simultaneous localization and mapping;3D LiDAR point cloud;feature extraction and matching;real-time;LiDAR SLAM},
       doi={10.1109/LRA.2024.3354550}}
+
 
 
     @ARTICLE{9944848,
